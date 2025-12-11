@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignatura de TI</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="imagenes/logoUPSIN.jpeg" alt="Logo de la Universidad" class="logo-header">
+            <div class="header-text">
+                <h1>Ingeniería en Tecnología de la Información</h1>
+                <p>Asignatura: Ingeniería de Requisitos</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-container">
+            <a href="#"><img src="imagenes/letrasupsin.jpg" alt="Logo de la Universidad" class="logo-nav"></a>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="#proposito">Propósito</a></li>
+                <li><a href="#cuatrimestre">Cuatrimestre</a></li>
+                <li><a href="#unidades">Unidades</a></li>
+                <li><a href="#masinfo">Mas Información</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <section id="proposito">
+            <h2>Propósito de Aprendizaje</h2>
+            <article>
+                <h3>Objetivo general</h3>
+                <p>El alumno obtendrá los requisitos de los sistemas informáticos mediante técnicas de obtención, modelación, prototipado y validación de requisitos para ser desarrollados con base en la necesidad real del usuario.</p>
+            </article>
+        </section>
+
+        <section id="cuatrimestre">
+            <h2>Cuatrimestre</h2>
+            <article>
+                <p>Esta asignatura se cursa en el 7mo cuatrimestre de la carrera de Ingeniería en Tecnología de la Información.</p>
+            </article>
+        </section>
+
+        <section id="unidades">
+            <h2>Unidades de Aprendizaje</h2>
+            <article>
+                <h3>Unidad 1: Fundamentos de Ingeniería de Requisitos</h3>
+                <ul>
+                    <li>Como hacer un reporte de investigación de requisitos</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Unidad 2: Obtención y Análisis de Requisitos</h3>
+                <ul>
+                    <li>Técnicas de obtención de Requisitos</li>
+                    <li>Análisis de Requisitos y negociación</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Unidad 3: Modelado de Requisitos</h3>
+                <ul>
+                    <li>Técnicas de modelado</li>
+                    <li>Métodos formales</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="masinfo">
+            <h2>Mas Información sobre UPSIN</h2>
+            <figure>
+                <a href="https://www.upsin.edu.mx" target="_blank">
+                    <img src="imagenes/logoUPSIN.jpeg" alt="Visita la Pagina Oficial de UPSIN">
+                </a>
+                <figcaption>Visita la Página Oficial de UPSIN. Haz clic en la imagen.</figcaption>
+            </figure>
+            <figure>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/fTrJfSqgNkQ"
+                        title="Video introductorio de UPSIN" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <figcaption>Video introductorio de UPSIN.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>Desarrollado por: Alejandro Gonzalez | Ingeniería en TI | 2025</p>
+    </footer>
+
+    <!-- JS MENÚ MÓVIL -->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav ul');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
